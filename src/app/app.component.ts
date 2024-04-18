@@ -4,13 +4,14 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent, CarouselComponent],
 })
 export class AppComponent {
   // title = 'tour';
