@@ -3,13 +3,14 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { CardComponent } from './card/card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent],
 })
 export class AppComponent {
   // title = 'tour';

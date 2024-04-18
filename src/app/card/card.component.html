@@ -1,0 +1,9 @@
+<div class="center">
+  <div class="article-card" *ngFor="let country of listOfCountries">
+    <div class="content">
+      <p class="date">{{ country.data }}</p>
+      <p class="title">{{ country.name }}</p>
+    </div>
+    <img src="{{ country.imagem }}" alt="article-cover" />
+  </div>
+</div>
