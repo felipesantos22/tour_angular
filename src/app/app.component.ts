@@ -5,13 +5,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './card/card.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { FormComponent } from "./form/form.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent, CarouselComponent],
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent, CarouselComponent, FooterComponent, FormComponent]
 })
 export class AppComponent {
   // title = 'tour';
