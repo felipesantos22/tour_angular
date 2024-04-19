@@ -1,6 +1,10 @@
-<nav class="navbar navbar-expand-lg bg-white text-dark">
+<nav class="navbar navbar-expand-lg bg-white text-dark fixed-top">
   <div class="container-fluid">
-    <img src="https://www.egitoviagens.com/wp-content/uploads/2019/07/Logo-Egito-Viagens-Marca-Da%CC%80gua.png" alt="article-cover" width="100px" />
+    <img
+      src="https://www.egitoviagens.com/wp-content/uploads/2019/07/Logo-Egito-Viagens-Marca-Da%CC%80gua.png"
+      alt="article-cover"
+      width="100px"
+    />
     <button
       class="navbar-toggler"
       type="button"
@@ -38,12 +42,14 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <form class="d-flex" role="search" (ngSubmit)="search()">
         <input
           class="form-control me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
+          [(ngModel)]="query"
+          name="query"
         />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

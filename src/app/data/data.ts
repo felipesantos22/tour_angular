@@ -12,7 +12,7 @@ export const listOfCountries: Country[] = [
         data: "Jan 1, 2024"
     },
     {
-        name: "Egito",
+        name: "Marrocos",
         imagem: "https://images.pexels.com/photos/7566890/pexels-photo-7566890.jpeg?auto=compress&cs=tinysrgb&w=600",
         data: "Jan 1, 2024"
     },
@@ -31,19 +31,19 @@ export const listOfCountries: Country[] = [
         imagem: "https://images.pexels.com/photos/19873071/pexels-photo-19873071/free-photo-of-camelo.jpeg?auto=compress&cs=tinysrgb&w=600",
         data: "Jan 1, 2024"
     },
-    {
-        name: "Egito",
-        imagem: "https://images.pexels.com/photos/6010456/pexels-photo-6010456.jpeg?auto=compress&cs=tinysrgb&w=600",
-        data: "Jan 1, 2024"
-    },
-    {
-        name: "Egito",
-        imagem: "https://images.pexels.com/photos/3214970/pexels-photo-3214970.jpeg?auto=compress&cs=tinysrgb&w=600",
-        data: "Jan 1, 2024"
-    },
-    {
-        name: "Egito",
-        imagem: "https://images.pexels.com/photos/15188096/pexels-photo-15188096/free-photo-of-panorama-vista-paisagem-montanhas.jpeg?auto=compress&cs=tinysrgb&w=600",
-        data: "Jan 1, 2024"
-    }
+    // {
+    //     name: "Egito",
+    //     imagem: "https://images.pexels.com/photos/6010456/pexels-photo-6010456.jpeg?auto=compress&cs=tinysrgb&w=600",
+    //     data: "Jan 1, 2024"
+    // },
+    // {
+    //     name: "Egito",
+    //     imagem: "https://images.pexels.com/photos/3214970/pexels-photo-3214970.jpeg?auto=compress&cs=tinysrgb&w=600",
+    //     data: "Jan 1, 2024"
+    // },
+    // {
+    //     name: "Egito",
+    //     imagem: "https://images.pexels.com/photos/15188096/pexels-photo-15188096/free-photo-of-panorama-vista-paisagem-montanhas.jpeg?auto=compress&cs=tinysrgb&w=600",
+    //     data: "Jan 1, 2024"
+    // }
 ];

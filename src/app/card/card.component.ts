@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { listOfCountries } from '../data/data';
+import { Component, Input } from '@angular/core';
 import { Country } from '../interfaces/Country';
 
 @Component({
@@ -11,5 +10,5 @@ import { Country } from '../interfaces/Country';
   styleUrl: './card.component.css',
 })
 export class CardComponent {
-  listOfCountries: Country[] = listOfCountries;
+  @Input() filteredCountries!: Country[];
 }

@@ -15,11 +15,4 @@ import { FormComponent } from "./form/form.component";
     imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent, CardComponent, CarouselComponent, FooterComponent, FormComponent]
 })
 export class AppComponent {
-  // title = 'tour';
-  name: string = 'Felipe Virissimo Dos Santos';
-  age: number = 33;
-  data = {
-    email: 'felipevs2018@gmail.com',
-    password: 123456,
-  };
 }
