@@ -28,7 +28,7 @@ export class HomeComponent {
 
   query: string = '';
   listOfCountries: Country[] = listOfCountries;
-  filteredCountries: Country[] = listOfCountries.slice(); // Nova propriedade para armazenar os resultados filtrados
+  filteredCountries: Country[] = []; // Nova propriedade para armazenar os resultados filtrados
 
   search() {
     this.filteredCountries = this.listOfCountries.filter((item) => {
