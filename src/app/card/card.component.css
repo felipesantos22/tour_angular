@@ -60,3 +60,6 @@ body {
     color: #fff;
   }
   
+  select {
+    margin: 30px;
+  }

@@ -1,10 +1,10 @@
-<select class="form-select" aria-label="Default select example" style="width: 150px;" (change)="sortCountriesByNames($event)">
+<select class="form-select" aria-label="Default select example" style="width: 180px;" (change)="sortCountriesByNames($event)">
   <option selected>Filtros</option>
   <option value="asc">Menor preço</option>
   <option value="desc">Maior preço</option>
   <option value="alfa">Ordem alfabética</option>
 </select>
-<div class="center">
+<div class="center">  
   <div class="article-card" *ngFor="let country of filteredCountries">
     <div class="content">
       <p class="date">{{ country.data }}</p>
