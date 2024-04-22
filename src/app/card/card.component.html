@@ -1,16 +1,23 @@
-<select class="form-select" aria-label="Default select example" style="width: 180px;" (change)="sortCountriesByNames($event)">
-  <option selected>Filtros</option>
-  <option value="asc">Menor preço</option>
-  <option value="desc">Maior preço</option>
-  <option value="alfa">Ordem alfabética</option>
-</select>
-<div class="center">  
-  <div class="article-card" *ngFor="let country of filteredCountries">
-    <div class="content">
-      <p class="date">{{ country.data }}</p>
-      <p class="title">{{ country.name }}</p>
-      <p class="title">${{ country.price }}</p>
+<div class="card">
+  <select
+    class="form-select"
+    aria-label="Default select example"
+    style="width: 180px"
+    (change)="sortCountriesByNames($event)"
+  >
+    <option selected>Filtros</option>
+    <option value="asc">Menor preço</option>
+    <option value="desc">Maior preço</option>
+    <option value="alfa">Ordem alfabética</option>
+  </select>
+  <div class="center">
+    <div class="article-card" *ngFor="let country of filteredCountries">
+      <div class="content">
+        <p class="date">{{ country.data }}</p>
+        <p class="title">{{ country.name }}</p>
+        <p class="title">${{ country.price }}</p>
+      </div>
+      <img src="{{ country.imagem }}" alt="article-cover" />
     </div>
-    <img src="{{ country.imagem }}" alt="article-cover" />
   </div>
 </div>
