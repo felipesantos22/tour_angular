@@ -12,6 +12,7 @@ import { listOfCountries } from '../data/data';
 })
 export class CardComponent {
   @Input() filteredCountries!: Country[];
+  @Input() sortCountriesByNames!: (event: Event) => void;
 
   ngOnInit() {
     if (!this.filteredCountries || this.filteredCountries.length === 0) {

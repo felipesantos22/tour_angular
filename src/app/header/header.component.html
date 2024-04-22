@@ -42,17 +42,18 @@
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search" (ngSubmit)="search()">
+      <form class="d-flex" role="search">
         <input
           class="form-control me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
-          [(ngModel)]="query"
-          name="query"
+          (input)="search($event)"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
   </div>
+  <!-- <i class="bi bi-arrow-down-square" (click)="sortCountriesByName()">Ordem Alfabetica</i>
+  <i class="bi bi-arrow-down-square" (click)="sortCountriesByPrice()">Menor Preço</i>
+  <i class="bi bi-arrow-down-square" (click)="sortCountriesByPriceAsc()">Maior Preço</i> -->
 </nav>

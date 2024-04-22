@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  @Input() search!: () => void; 
-  @Input() query!: string; 
+  @Input() search!: (event: Event) => void;
+  @Input() sortCountriesByName!: () => void;
+  @Input() sortCountriesByPrice!: () => void;
+  @Input() sortCountriesByPriceAsc!: () => void;
 }
