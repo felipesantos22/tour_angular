@@ -19,10 +19,23 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/"
+            routerLinkActive="active"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active"
+            >About</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active"
+            >Contact</a
+          >
         </li>
         <li class="nav-item dropdown">
           <a
@@ -35,10 +48,10 @@
             Documents
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item">Action</a></li>
+            <li><a class="dropdown-item">Another action</a></li>
             <!-- <li><hr class="dropdown-divider" /></li> -->
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item">Something else here</a></li>
           </ul>
         </li>
       </ul>
@@ -57,3 +70,4 @@
   <i class="bi bi-arrow-down-square" (click)="sortCountriesByPrice()">Menor Preço</i>
   <i class="bi bi-arrow-down-square" (click)="sortCountriesByPriceAsc()">Maior Preço</i> -->
 </nav>
+<router-outlet></router-outlet>

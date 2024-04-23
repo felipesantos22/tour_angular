@@ -1,12 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CardComponent } from '../card/card.component';
 import { CarouselComponent } from '../carousel/carousel.component';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
 import { Country } from '../interfaces/Country';
 import { listOfCountries } from '../data/data';
-import { Console } from 'console';
 
 @Component({
   selector: 'app-home',
@@ -15,8 +12,6 @@ import { Console } from 'console';
     CommonModule,
     CardComponent,
     CarouselComponent,
-    HeaderComponent,
-    FooterComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -28,15 +23,6 @@ export class HomeComponent {
   // }
 
   filteredCountries: Country[] = listOfCountries;
-
-  // Filtrar por nome
-  search(event: Event): void {
-    const target = event.target as HTMLInputElement;
-    const value = target.value.toLowerCase();
-    this.filteredCountries = listOfCountries.filter((country) => {
-      return country.name.toLowerCase().includes(value);
-    });
-  }
 
   // Ordenação alfabética
   sortCountriesByName(): void {
