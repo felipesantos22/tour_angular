@@ -11,23 +11,36 @@ import { listOfCountries } from '../data/data';
   imports: [
     CommonModule,
     FormsModule,
-    RouterLink,
-    RouterOutlet,
+    RouterLink,    
     RouterLinkActive,
+    RouterOutlet
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  name: string = '';
   filteredCountries: Country[] = listOfCountries;
+  newFilter: Country[] = [];
 
   search(event: Event): void {
     const target = event.target as HTMLInputElement;
     const value = target.value.toLowerCase();
-    this.filteredCountries = listOfCountries.filter((country) => {
+    this.newFilter = listOfCountries.filter((country) => {
       return country.name.toLowerCase().includes(value);
     });
   }
+
+  // searchByName(name: string): Country[] {
+  //   const searchTerm = name.toLowerCase();
+  //   return listOfCountries.filter((country) =>
+  //     country.name.toLowerCase().includes(searchTerm)
+  //   );
+  // }
+
+  // test() {
+  //   console.log(this.searchByName(this.name));
+  // }
 
   @Input() sortCountriesByName!: () => void;
   @Input() sortCountriesByPrice!: () => void;
