@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {MatToolbarModule} from '@angular/material/toolbar';
 import { Country } from '../interfaces/Country';
 import { listOfCountries } from '../data/data';
 
@@ -13,7 +14,8 @@ import { listOfCountries } from '../data/data';
     FormsModule,
     RouterLink,    
     RouterLinkActive,
-    RouterOutlet
+    RouterOutlet,
+    MatToolbarModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
